@@ -1,0 +1,11 @@
+### create user
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "username": "james",
+  "password": "password"
+}
+
+### fetch user
+GET http://localhost:8080/users?username=james

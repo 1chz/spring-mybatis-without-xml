@@ -1,0 +1,6 @@
+spotless {
+    java {
+        palantirJavaFormat()
+        removeUnusedImports()
+    }
+}
