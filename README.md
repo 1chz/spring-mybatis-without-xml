@@ -18,6 +18,8 @@ implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.0")
 
 [📜 예제 코드](src/main/java/io/github/olivahn/mybatis/UserMybatisMapper.java)
 
+[📜 HTTP Client](fetch-users.http)
+
 ```java
 @Mapper
 public interface UserMybatisMapper {
