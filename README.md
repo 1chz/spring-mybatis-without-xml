@@ -2,8 +2,12 @@
 
 ## 동적 쿼리(Dynamic Query)란?
 조건의 유무에 따라 다른 쿼리를 실행하는 것을 동적 쿼리라고 한다.
-Spring Data JPA의 경우 이러한 동적 쿼리를 작성하는게 꽤 까다로우며, QueryDSL이나 jooq가 많이 사용되지만 설정이 귀찮고 러닝커브가 꽤 있다.
-단지 동적 쿼리만 편하게 처리하고 싶다면 Spring Data JPA + Mybatis의 조합도 생각보다 괜찮다.
+
+Spring Data JPA의 경우 이러한 동적 쿼리를 작성하는게 꽤 까다로우며, Querydsl이나 jOOQ가 많이 사용되지만 설정이 귀찮고 러닝커브가 꽤 있다.
+
+JdbcTemplate은 즉시 사용하기에는 편리하지만 ResultSet을 매핑하는게 귀찮다.
+
+단지 동적 쿼리만 편하게 처리하고 싶다면 Spring Data JPA + Mybatis의 조합이 생각보다 괜찮으니 한번 살펴볼 가치가 있지 않을까?
 
 ## 핵심 의존성
 XML을 배제하고 사용하기 위해서는 Mybatis3 이상의 버전이 필요하다.
@@ -18,7 +22,7 @@ implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.0")
 
 [📜 예제 코드](src/main/java/io/github/olivahn/mybatis/UserMybatisMapper.java)
 
-[📜 HTTP Client](fetch-users.http)
+[📜 HTTP 요청](fetch-users.http)
 
 ```java
 @Mapper
@@ -51,7 +55,8 @@ public interface UserMybatisMapper {
 
 ## XML을 사용하지 않고 단순 쿼리를 구현하는 방법
 
-쿼리가 길다면 자바17의 텍스트 블록을 사용해 깔끔하게 구현할 수 있다.
+만약 쿼리가 길다면 자바17의 텍스트 블록을 사용해 더욱 깔끔하게 구현할 수 있다.
+
 사실 이 부분은 Spring Data JPA를 같이 사용하고 있다면 쿼리 메소드로 인해 아무 의미가 없을수도 있다.
 
 ```java
