@@ -1,4 +1,4 @@
-package io.github.olivahn.mybatis;
+package io.github.shirohoo.mybatis;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

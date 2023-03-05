@@ -20,7 +20,7 @@ implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.0")
 
 [📜 관련 마이바티스 문서](https://mybatis.org/mybatis-3/ko/java-api.html#%EC%9E%90%EB%B0%94-api)
 
-[📜 예제 코드](src/main/java/io/github/olivahn/mybatis/UserMybatisMapper.java)
+[📜 예제 코드](src/main/java/io/github/shirohoo/mybatis/UserMybatisMapper.java)
 
 [📜 HTTP 요청](fetch-users.http)
 

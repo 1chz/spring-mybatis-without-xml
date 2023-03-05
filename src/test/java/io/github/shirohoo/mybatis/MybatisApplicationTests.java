@@ -1,4 +1,4 @@
-package io.github.olivahn.mybatis;
+package io.github.shirohoo.mybatis;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,4 @@
-package io.github.olivahn.mybatis;
+package io.github.shirohoo.mybatis;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

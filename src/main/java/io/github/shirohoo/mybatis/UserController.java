@@ -1,4 +1,4 @@
-package io.github.olivahn.mybatis;
+package io.github.shirohoo.mybatis;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;

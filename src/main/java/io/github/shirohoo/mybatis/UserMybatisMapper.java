@@ -1,4 +1,4 @@
-package io.github.olivahn.mybatis;
+package io.github.shirohoo.mybatis;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
